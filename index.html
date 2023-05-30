@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Data aos-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--JS-->
+    <script src="script.js"defer></script>
+
+    <!--Icons-->
+    <script src="https://kit.fontawesome.com/fb3c668f66.js" crossorigin="anonymous"></script>
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aoboshi+One&display=swap" rel="stylesheet">
+
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+
+    <title>Gårdcafeen</title>
+
+</head>
+<body>
+
+<!--Data AOS-->
+    <script>AOS.init();</script>
+
+<!--Header-->
+    <header>
+        <nav>
+            <a href="index.html">hjem</a>
+            <a href="#headline">menu</a>
+        </nav>
+       <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+        <nav>
+            <a href="#headline-to">om</a>
+            <a href="#contact">kontakt</a>
+        </nav>
+    </header>
+
+<!--Indhold-->   
+    <section class="backimg1">
+        <img src="images/forside.jpg" alt="">
+        <div id="fronttext">
+            <h1>Gårdcafeen åbner op for sommeren 2023</h1>
+            <h2>Nyd en iskold drink i vores gårdhave eller kom indenfor og smag vores retter.</h2>
+        </div>
+    </section>
+
+<!--Card1-->
+    <div id="headline">
+    <h1>Se vores menukort, drinks eller book et bord.</h1>
+    <p>Oplev vores lækre menukort med et bredt udvalg af delikate retter, fristende drinks og udforsk vores nemme bookingmuligheder for at sikre dig en plads i vores hyggelige café.</p>
+    </div>
+
+    <section class="container">
+        
+    <!-- Menu kort -->
+    <div class="card">
+        <img id="myImg1" src="images/mad.jpg" alt="">
+        <div class="menutext">
+            <h1>menu</h1>
+            <p>Nyd vores retter, tilberedt med økologiske ingredienser og smag bæredygtighed i hver bid.</p>
+        </div>
+    </div>
+
+    <!-- Modal til menu -->
+    <div id="myModal" class="modal">
+        <div class="close">&times;</div>
+        <img class="modal-content" id="img01">
+    </div>
+
+    <!-- Drinks -->
+    <div class="card">
+        <img id="myImg2" src="images/drink.jpg" alt="drinks">
+        <div class="menutext">
+            <h1>drinks</h1>
+            <p>Sluk tørsten med et stort udvalg af økologiske kaffe, øl eller vin</p>
+        </div>
+    </div>
+
+    <!-- Modal til drink -->
+    <div id="myModal2" class="modal">
+        <div class="close2">&times;</div>
+        <img class="modal-content" id="img02">
+    </div>
+
+    <!--Book-->
+        <div class="card">
+            <img src="images/book.jpg" alt="book">
+            <div class="menutext">
+                <h1>book</h1>
+                <p>Book et bord til dig, dine venner eller familie</p>
+            </div>
+        </div>
+
+    </section>
+
+<!--Slideshow-->
+<section class="container3">
+
+    <div id="headline">
+        <h1>Her byder vi jer velkommen</h1>
+        <p>Oplev vores billedslideshow, der fanger den hyggelige atmosfære og indretning i vores café.
+        </p>
+        </div>
+
+<div class="slideshow-container">
+
+    <!-- Slides -->
+    <div class="slideBilleder fade">
+        <img src="images/slide1.jpg" style="width:100%">
+    </div> 
+
+    <!-- Gentag den samme struktur for de andre slides -->
+    <div class="slideBilleder fade">
+        <img src="images/slide2.jpg" style="width:100%">  
+    </div>
+
+    <div class="slideBilleder fade">  
+        <img src="images/slide3.jpg" style="width:100%">
+    </div>
+
+    <div class="slideBilleder fade">
+        <img src="images/slide4.jpg" style="width:100%">
+    </div>
+
+    <div class="slideBilleder fade">
+        <img src="images/slide5.jpg" style="width:100%">
+    </div>
+
+    <div class="slideBilleder fade">
+        <img src="images/slide6.jpg" style="width:100%">
+    </div>
+
+    <!-- Knapper -->
+    <a class="tilbage" onclick="plusSlides(-1)">&#8249;</a>
+    <a class="naeste" onclick="plusSlides(1)">&#8250;</a>
+</div>
+
+    <!-- Slide dots -->
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+</div>
+</section>
+
+<!--Card2-->
+
+<div id="headline-to">
+    <h1>Vi har plads til alle</h1>
+    </div>
+
+<section class="container2">
+    <img id="img1" src="images/arb1.jpg" alt="img1" data-aos="fade-up-right">
+    <div id="textbox">
+        <p>Vi er tre venner, Stefan, Claus og 
+            Rasmus som ejer Gårdcafeen i hjertet af Århus.
+        </p>
+        <p>
+            Da vi for første gang åbnede dørene op i 2022, 
+            har vi haft stort fokus på at skabe et rum, der kan rumme alle.
+        </p>
+        <p>Vores café er designet til at tilbyde åbne områder til 
+            fællesskab, både indenfor med familiespil eller udenfor 
+            i vores lækre gårdhave.
+        </p>
+        <p>
+             Vi går op i bæredygtighed og økologi, for klimaet og smagens skyld. 
+             Derfor tilbyder vi lækre retter med smagen af danske råvarer af høj kvalitet.
+        </p>
+    </div>
+</section>
+
+<!--Card3-->
+<section class="backgroundcontent">
+    <video height="auto" autoplay="autoplay" loop="loop" muted="muted" src="images/video.mov" data-aos="flip-up"></video>
+    <div id="textbox2">
+        <p>Vores baristaer er eksperter i at lave den perfekte kop kaffe,
+             og vores bartendere er dygtige til at blande spændende og
+              velsmagende drinks.
+        </p>
+        <p>
+            Vi lægger vægt på opmærksomhed, venlighed og professionalisme
+             for at sikre, at du føler dig velkommen og godt taget hånd om.
+        </p>
+        <p>Uanset om du er en studerende, der søger et roligt sted at studere,
+             eller en familie, der ønsker at mødes og hygge sig, så er der altid plads til alle.</p>
+    </div>
+</section>
+
+<section class="container2">
+    <img id="img3" src="images/billede.png" alt="img2" data-aos="fade-down-left">
+    <div id="textbox">
+        <p>Vi glæder os til at byde dig velkommen i vores café og give dig en
+             uforglemmelig oplevelse. Kom og besøg os, tag et øjeblik 
+             for dig selv og nyd alt det, vores café har at tilbyde. 
+        </p>
+        <p>
+            Tak fordi du besøger vores hjemmeside, og vi ser frem til at se dig nede i cafeen!
+        </p>
+        <p>Med venlig hilsen</p>
+        <p>Gårdcafeen</p>
+    </div>
+</section>
+
+
+<section class="container4">
+    <div id="contact">
+        <h3>Har du brug for at kontakte os?</h3>
+      <form action="/action_page.php">
+        <label for="name">Fulde navn</label>
+        <input type="text" id="name" placeholder="Indtast navn">
+        
+        <label for="mail">Mail</label>
+        <input type="text" id="mail" placeholder="Indtast mail">
+    
+        <label for="telefon">Telefon</label>
+        <input type="text" id="telefon" placeholder="Indtast telefonnummer">
+    
+    
+        <label for="henvendelse">Henvendelse</label>
+        <textarea id="hendvelse" name="henvendelse" placeholder="Hvad kan vi hjælpe dig med?" style="height:200px"></textarea>
+    
+        <input type="submit" value="Send">
+      </form>
+    </div>
+    
+</section>
+<!--Footer-->
+    <footer>
+        <div id="kontaktinfo">
+            <h1>Kontaktinfo</h1>
+            <p>Studsgade 6B</p>
+            <p>8000 Århus C</p>
+            <p>Tel: 3026 0056</p>
+            <a href="https://www.gaardcafeen.dk/" id="hjemmesidelink">www.gaardcafeen.dk/</a>
+        </div>
+
+        <div>
+            <h1>Åbningstider</h1>
+
+            <table>
+            <tr>
+                <td>Mandag - Torsdag</td>
+                <td>8.30–22.00
+                </td>
+            </tr>
+
+            <tr>
+                <td>Fredag</td>
+                <td>8.30-02.00</td>
+            </tr>
+
+            <tr>
+                <td>Lørdag</td>
+                <td>9.00–02.00</td>
+            </tr>
+
+            <tr>
+                <td>Søndag</td>
+                <td>9.30–21.00</td>
+            </tr>
+            </table>
+        </div>
+
+        <div>
+            <h1>Find os på</h1>
+
+            <div id="icons"> 
+                <a href="https://www.facebook.com/gaardcafeen"> <i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/gaardcafeen/?fbclid=IwAR3kqWTzkPmgWlu-VnL-QNM7q3uOU6m1EMl7QhaLp9jm68CLVmPu1kpmnHM> <i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
